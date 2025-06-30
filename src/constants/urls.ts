@@ -6,10 +6,9 @@ export const REGISTER_ENDPOINT = "/auth/register";
 export const LOGOUT_ENDPOINT = "/auth/logout";
 
 //  Vocabulary endpoints
+export const VOCABULARY_ENDPOINT = "/vocabulary";
 export const VOCABULARY_RANDOM_ENDPOINT = "/vocabulary/random";
-export const REMOVE_VOCABULARY_ENDPOINT = "/vocabulary/remove";
 export const SEARCH_WORD_ENDPOINT = "/vocabulary/search";
-export const ADD_VOCABULAR_ENDPOINT = "/vocabulary/add";
 
 // Vocabularies List endpoints
 export const VOCABULARIES_LISTS_ENDPOINT = "/vocabularieslist";

@@ -1,8 +1,7 @@
 import type { Vocabulary } from "../types/vocabulary";
 import {
-  ADD_VOCABULAR_ENDPOINT,
+  VOCABULARY_ENDPOINT,
   API_BASE_URL,
-  REMOVE_VOCABULARY_ENDPOINT,
   SEARCH_WORD_ENDPOINT,
   VOCABULARY_RANDOM_ENDPOINT,
 } from "../constants/urls";
@@ -29,7 +28,7 @@ export const removeVocabularyInVocabulariesList = async (
   vocabulariesListId: number,
   vocabularyId: number
 ): Promise<boolean> => {
-  const response = await fetch(`${API_BASE_URL}${REMOVE_VOCABULARY_ENDPOINT}`, {
+  const response = await fetch(`${API_BASE_URL}${VOCABULARY_ENDPOINT}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
@@ -67,7 +66,7 @@ export const addVocabulary = async (
   vocabulariesListId: number,
   vocabularyId: number
 ): Promise<Vocabulary | null> => {
-  const response = await fetch(`${API_BASE_URL}${ADD_VOCABULAR_ENDPOINT}`, {
+  const response = await fetch(`${API_BASE_URL}${VOCABULARY_ENDPOINT}`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
