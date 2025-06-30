@@ -43,15 +43,6 @@ secure JWT-based authentication.
 | Bootstrap        | Responsive and consistent styling     |
 | React Router DOM | Routing and navigation                |
 
-## Dependencies
-
-- react
-- react-bootstrap
-- react-dom
-- react-router-dom
-- vite
-- bootstrap
-
 ## License
 
 This project is licensed under the Apache License 2.0. See the LICENSE file for
